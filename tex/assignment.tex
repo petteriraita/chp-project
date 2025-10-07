@@ -1,0 +1,29 @@
+\documentclass{article}
+\begin{document}
+
+
+
+\section{Exercise}
+\subsection{b}
+
+
+Determine whether the answer for test01.SWE is YES or NO and justify your solution. 
+
+The answer for test01 is YES if $\forall t_i$ the expansion $e(t_i)$ is a substring of $s$. Every $t_i$ is some number of uppercase characters and the expansion is defined as the concatenation of the different expansions for each upper case character $\gamma_i$. Each $e(\gamma_i)$ can be any word of the set $R_i$. 
+
+The test01 is small enough to be solved by hand. $s := \texttt{abdde}$ $k=4$
+
+For each $R_i$ the different expansions are:
+\begin{itemize}
+    \item The ABD can expanded from a,b,d to abd
+    \item The DDE can expanded from d,d,e to dde
+    \item The AAB can expanded from a,b,d to abd
+    \item The ABd can expanded from a,b,d to abd
+\end{itemize}
+
+All of these elements are substrings of $s$. Therefore the solution to test01 is YES.
+
+\subsubsection{Running time}
+Let there be $m$ number of subsets $R_i \in \Sigma*$. For $t_i$ the number of different expansions for $e(\gamma_i)$ is $O(n)$ where $n$ is the $max_i |R_i|$. The total number of expansions $e(t_i)$ is therefore $O(n^m)$.
+
+\end{document}
