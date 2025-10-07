@@ -16,12 +16,13 @@ Given two alphabets (Σ and Γ), a string s, k strings containing letters from b
 
 ```
 ├── README.md              # This file
-├── report-group-XX.pdf    # Theoretical solutions
-├── code-group-XX.zip      # Implementation source code
-├── readme-group-XX.txt    # Compilation and execution instructions
+├── report-group-20.pdf    # Theoretical solutions
+├── code-group-20.zip      # Implementation source code
+├── readme-group-20.txt    # Compilation and execution instructions
 ├── src/                   # Source code directory
 │   ├── main.py            # Main entry point of the implementation
 │   └── utils/             # Utility modules for helper functions
+│   └── tests/             # Test cases for the implementation
 ├── tex/                   # Latex source files for the report
 └── tests/                 # Test cases (test01.SWE - test06.SWE)
 ```
@@ -96,15 +97,15 @@ It runs all the tests in the src/tests/ directory starting or ending by _test.py
 
 ### Part I: Implementation (25%)
 - [ ] Implement algorithm from Part G
-- [ ] Read input from **standard input** (stdin) - NOT command line arguments
-- [ ] Parse .SWE file format correctly
-- [ ] Handle malformed inputs (output NO)
+- [x] Read input from **standard input** (stdin) - NOT command line arguments
+- [x] Parse .SWE file format correctly
+- [x] Handle malformed inputs (output NO)
 - [ ] Output solution format: `γi:ri` (one per line)
 - [ ] Output NO for NO-instances
 - [ ] Test on test01.SWE - test06.SWE
 - [ ] Create additional test cases
 - [ ] Ensure all DTU Learn tests pass
-- [ ] Choose language: Java, C, C++, or Python
+- [x] Choose language: Java, C, C++, or Python
 - [ ] Write compilation/execution instructions
 
 ### Documentation & Submission
