@@ -136,3 +136,7 @@ htmlcov/
 *.tmp
 *.DS_Store
 Thumbs.db
+.vscode/
+
+# Project specific
+result.txt
