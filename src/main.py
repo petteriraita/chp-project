@@ -3,7 +3,7 @@ import logging
 
 # Custom imports
 from utils.check_input_format import check_input_format
-
+from utils.parser import parse_input
 def setup_logging():
     # Create logger
     logger = logging.getLogger("mylogger")
@@ -35,8 +35,14 @@ def main():
         logger.error("Invalid input format detected, printing NO and exiting")
         print("NO")
         exit(-1)
-    logger.debug("Input format is valid, proceeding with further processing")
-
+    logger.debug("Input format is valid, parsing...")
+    k, s, t, R = parse_input(file_content, logger)
+    logger.debug(f"Finished parsing input")
+    logger.debug(f"k: {k}")
+    logger.debug(f"s: {s}")
+    logger.debug(f"t: {t}")
+    logger.debug(f"R: {R}")
+    
     print("YES")
 
 if __name__ == "__main__":

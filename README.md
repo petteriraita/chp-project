@@ -26,6 +26,19 @@ Given two alphabets (Σ and Γ), a string s, k strings containing letters from b
 └── tests/                 # Test cases (test01.SWE - test06.SWE)
 ```
 
+### How to run the implementation
+Run:
+```bash
+python3 src/main.py < tests/test01.SWE
+```
+It generates a debug.log file in the root directory. It also prints debugging output to the console.
+
+### How to run tests
+Run:
+```bash
+pytest
+```
+It runs all the tests in the src/tests/ directory starting or ending by _test.py test_X.py.
 ## Task Checklist
 
 ### Part B: Initial Analysis (5%)
